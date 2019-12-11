@@ -24,6 +24,7 @@
     
 
     <title>Shiseido - Case study</title>
+
   </head>
   <body>
 
@@ -32,27 +33,28 @@
     ================================================== -->
     <div class="main-content content-case-study content-case-study--shiseido">
 
-<!--       <div class="custom-burger-container d-md-none">
-  <ul>
-    <li><a href="#projet">Projets</a></li>
-    <li><a href="#about">À Propos</a></li>
-  </ul>
-</div> -->
+      <div class="custom-burger-container d-md-none">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="index.html">Projets</a></li>
+          <li><a href="index.html">À Propos</a></li>
+        </ul>
+      </div>
       <!-- HEADER -->
       <div class="header">
         <header>
           <nav class="d-none d-md-block">
             <ul>
-              <li><a href="#projet">Projets</a></li>
-              <li><a href="#about">À Propos</a></li>
+              <li><a href="index.html#projet">Projets</a></li>
+              <li><a href="index.html#about">À Propos</a></li>
             </ul>
           </nav>
 
-   <!--        <span class="custom-burger d-md-none" onclick="burgertog(this)">
-     <div class="bar bar1"></div>
-     <div class="bar bar2"></div>
-     <div class="bar bar3"></div>
-   </span> -->
+          <span class="custom-burger d-md-none">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </span>
 
 
 
@@ -365,9 +367,17 @@
           <div class="row align-items-start justify-content-center">
             <div class="col-10">
               <h2>Traitement des retours utilisateurs : Seconde itération</h2>
+
             </div>
           </div>
         </section>
+      </div>
+      <div class="container-fluid">
+        <section class="section--fluid section--fluid__livrable section--fluid__livrable-shiseido">
+
+        </section>
+      </div>
+      <div class="container">
         <section id="apprentissage">
           <div class="row align-items-center justify-content-center">
             <div class="col-10">
@@ -405,19 +415,21 @@
     <script src="./assets/js/theme.min.js"></script>
 
     <script>
-  $(document).ready(function() {
-    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-      var page = $(this).attr('href'); // Page cible
-      var speed = 750; // Durée de l'animation (en ms)
-      var minusoffset = ($(page).offset().top)-50;
-      $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
-      return false;
-    });
-  });
-  function burgertog(x) {
-    x.classList.toggle("change");
-  }
-</script>
-
+      $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+          var page = $(this).attr('href'); // Page cible
+          var speed = 750; // Durée de l'animation (en ms)
+          var minusoffset = ($(page).offset().top)-50;
+          $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
+          return false;
+        });
+        $(".custom-burger").on('click', function() {
+          $(this).toggleClass("change");
+          $("body").toggleClass("overflowed");
+          $("header").toggleClass("active");
+          $(".custom-burger-container").toggleClass("active");
+        });
+      });
+    </script>
   </body>
 </html>
