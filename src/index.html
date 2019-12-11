@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    @@include("partials/head.html", {
+      "title": "Yann Michalski - UX Designer"
+    })
+  </head>
+  <body>
+
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content content-home">
+
+
+      <div class="top_container">
+        <header>
+          <nav>
+            <ul>
+              <li><a class="js-scrollTo" href="#projet">Projets</a></li>
+              <li><a class="js-scrollTo" href="#about">à Propos</a></li>
+            </ul>
+          </nav>
+        </header>
+        <section class="section-1">
+              <h1>Yann<br />Michalski <em>UX designer</em></h1>
+              <p>Découvrir, explorer, comprendre et ...<br/>améliorer</p>
+        </section>
+      </div>
+  
+      <div class="container mb-6">
+        <h2 class="m-6 text-center" id="projet">Projets</h2>
+        <div class="row">
+          <div class="col-12 col-lg-5 offset-lg-1">
+            <div class="card">
+              <img src="assets/img/projet/cover/shiseido-cover.jpg" alt="..." class="card-img-top">
+              <div class="card-body text-center">
+                <h3 class="card-title">
+                <a href="profile-posts.html">Shiseido</a>
+                </h3>
+                <p class="card-text text-muted"><small>App redesign</small></p>
+                <p class="card-text">
+                  <span class="badge badge-soft-secondary">
+                    E-commerce
+                  </span>
+                  <span class="badge badge-soft-secondary">
+                    Prototype
+                  </span>
+                  <span class="badge badge-soft-secondary">
+                    Figma
+                  </span>
+                </p>
+                <a href="cs_shiseido.html" class="btn-more">Voir le projet</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="card">
+              <img src="assets/img/projet/cover/auchan-cover.jpg" alt="..." class="card-img-top">
+              <div class="card-body text-center">
+                <h3 class="card-title">
+                <a href="profile-posts.html">Auchan drive</a>
+                </h3>
+                <p class="card-text text-muted"><small>App redesign</small></p>
+                <p class="card-text">
+                  <span class="badge badge-soft-secondary">
+                    E-commerce
+                  </span>
+                  <span class="badge badge-soft-secondary">
+                    Interview
+                  </span>
+                  <span class="badge badge-soft-secondary">
+                    Prototype
+                  </span>
+                  <span class="badge badge-soft-secondary">
+                    Figma
+                  </span>
+                </p>
+                 <a href="cs_auchan.html" class="btn-more">Voir le projet</a>
+              </div>
+            </div>  
+          </div>
+        </div> <!-- / .row -->
+      </div><!-- / .container -->
+  
+      <div class="container-fluid">
+        <footer class="text-center m-4"><a href="linkedin" target="_blank" title="Voir mon profil sur Linkedin"><img src="assets/img/home/linkedin.svg" alt="Logo linkedin"></a></footer>
+      </div>
+    </div> <!-- / .main-content -->
+
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    @@include("partials/scripts.html")
+
+        <script>
+  $(document).ready(function() {
+    $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+      var page = $(this).attr('href'); // Page cible
+      var speed = 750; // Durée de l'animation (en ms)
+      $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+      return false;
+    });
+  });
+</script>
+
+
+
+  </body>
+</html>

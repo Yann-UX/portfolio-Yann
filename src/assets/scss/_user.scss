@@ -1,0 +1,415 @@
+// 
+// user.scss
+// Use this to write your custom SCSS
+///////////HOME//////////////
+
+/* .custom-burger-container{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: $custom--white;
+	z-index: 40;
+	ul{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		text-align: center;
+		li{
+			padding: 5px 0;
+			margin-bottom: 0;
+			a{
+				font-size: 1.5rem;
+				color:$custom--black;
+				font-weight: bold;
+			}
+		}
+	}
+} */
+
+header{
+	position: fixed;
+	width: 100%;
+	background-color: rgba(255,255,255, .7);
+	z-index: 50;
+	nav{
+	  	text-transform: uppercase;
+	  	font-weight: bold;
+	  	width: 80%;
+	  	padding: 10px 0;
+	  	margin: 0 auto;
+	  	ul{
+	  		padding-left: 0;
+	    	list-style: none;
+	    	display: -webkit-flex;
+	    	display: -moz-flex;
+	    	display: -ms-flex;
+	    	display: -o-flex;
+	    	display: flex;
+	    	justify-content: flex-end;
+	    	margin-bottom: 0;
+	    	li{
+	    	  	margin: 0 0 0 30px !important;
+	    	  	a{
+	    	  		position: relative;
+  					padding: 10px 0;
+  					color: $custom--black;
+  					display: block;
+  					text-decoration: none;
+
+	    	  	  	&:before{
+	    	  	  	  content:"";
+	    	  	  	  position: absolute;
+	    	  	  	  width: 0;
+	    	  	  	  height: 3px;
+	    	  	  	  background-color: $custom--black;
+	    	  	  	  bottom: -1px;
+	    	  	  	  left: 0;
+	    	  	  	  transition: all ease-in-out 185ms;
+	    	  	  	}
+	    	  	  	&:hover{
+	    	  	  	  color:$custom--black;
+	    	  	  	  text-decoration: none;
+	    	  	  	  	&:before{
+	    	  	  	  	  width: 100%;
+	    	  	  	  	}
+	    	  	  	}
+	    	  	}
+	    	}
+	  	}
+	}
+	@media screen and (max-width: 767px) {
+		width: auto;
+		padding: 7px 3px;
+		right:10px;
+		top:10px;
+
+		.custom-burger{
+			cursor: pointer;
+
+			.bar {
+			  width: 30px;
+			  height: 4px;
+			  background-color: $custom--black;
+			  margin: 3px;
+			  transition: 0.4s;	
+			}
+			&.change{
+				.bar1{
+					-webkit-transform: rotate(-45deg) translate(-5px, 5px);
+				  	transform: rotate(-45deg) translate(-5px, 5px);
+				}
+				  
+				.bar2{
+					opacity: 0;		  	
+				}
+				.bar3{
+					-webkit-transform: rotate(45deg) translate(-5px, -5px);
+				  	transform: rotate(45deg) translate(-5px, -5px);			  	
+				}
+			}
+		}
+	}
+}
+.content-home{
+	    color: $custom--black;
+	a{
+  		position: relative;
+  		padding: 10px 0;
+  		color: $custom--black;
+  		display: block;
+  		text-decoration: none;
+
+
+  		 &.btn-more{
+			  position: relative;
+			  padding: 8px 0;
+			  margin: 30px auto 10px auto;
+			  max-width: 200px;
+			  width: 100%;
+			  text-align: center;
+			  font-weight: normal;
+			  border:solid 1px $custom--black__opa;
+			  border-radius: 0;
+			  text-decoration: none;
+			  transition: all ease-in-out 185ms;
+			  overflow: hidden;
+			  z-index: 20;
+
+			  &:before{
+			    content:'';
+			    position: absolute;
+			    width: 100%;
+			    height: 100%;
+			    top: 0;
+			    left: -100%;
+			    background-color: $custom--black;
+			    transition: all ease-in-out 185ms;
+			    z-index: -1;
+			  }
+			  &:hover{
+			    color:$white;
+			    font-weight: normal;
+			    &:before{
+			      left: 0;
+			    }
+			  }
+			}
+	}
+.top_container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background: #f4f4f4 url("../img/home/bg-portfolio.jpg") no-repeat top center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+section{
+  margin: 50px auto;
+
+  h1{
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 4rem;
+    em{
+      display: block;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 2rem;
+      opacity: 0.8;
+    }
+  }
+  h2{
+    margin-bottom: 50px;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  &.section-1{
+    position: absolute;
+    padding-left: 10%;
+    top: 40%;
+    transform: translateY(-40%);
+    p{
+      margin-top: 50px;
+      font-size: 1.5rem;
+      line-height: 2rem;      
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  section{
+    &.section-1{
+      top: 40%;
+      transform: translateY(-40%);
+      h1{
+        font-size: 3rem;
+        line-height: 3rem;
+        em{
+          font-size: 1.5rem;
+          line-height: 1.5rem;
+        }
+      }
+      p{
+        margin-top: 50px;
+        font-size: 1.2rem;
+        line-height: 1.5rem;      
+      }
+    }
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .top_container{
+    -ms-background-position-x: 20%;
+    background-position-x: 20%;
+  }
+}
+@media screen and (max-width: 576px) {
+ 		.top_container{
+ 		  background-size: auto;
+ 		  background-position-x: 60%;
+ 		  background-position-y: 10%;
+ 		}
+ 		section{
+ 		  &.section-1{
+ 		    top: 30%;
+ 		    transform: translateY(-30%);
+ 		    p{
+ 		      margin-top: 35px;
+ 		      font-size: 1rem;
+ 		      line-height: 1.2rem;      
+ 		    }
+ 		  }
+ 		}
+	}
+	footer{
+		a{
+			width: 40px;
+			margin: 0 auto;
+			transition: all ease-in-out 185ms;
+			img{
+				border:solid 1px transparent;
+				transition: all ease-in-out 185ms;
+			svg{
+				width: 100%;
+			}
+		}
+			&:hover{
+				background: $custom--black;
+				img{
+					border-color:#fafafa;
+					filter: invert(1);
+				}
+			}
+		}
+	}
+}
+////////////END HOME//////////
+
+
+
+///////////CASE STUDY/////////
+
+.content-case-study{
+	&.content-case-study--shiseido{
+		h1,h2,h3,h4{
+			color: $shiseido-pink;
+		}
+		.card-body--origin{
+			figure{
+				&:first-child{
+					img{
+						max-width:200px;
+					}
+				}
+			}
+		}
+	}
+
+	section{
+		margin: 50px auto;
+		&.section--fluid{
+			padding: 50px 0;
+			background-color: $custom--black;
+			color: $custom--white;
+			box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.3);
+
+			&.section--fluid__proto-shiseido{
+				padding: 0;
+				background: #F9FBFD url("../img/to-web/isometric-flow.jpg") no-repeat top center fixed;
+				-webkit-background-size: cover;
+				background-size: cover;
+				color: #000;
+				box-shadow: none;
+				.text-holder{
+					padding: 70px 30px;
+					background-color: #F9FBFD;
+					h2{
+						margin-top: 0;
+					}
+					p{
+						margin-bottom: 0;
+					}
+				}
+				@media screen and (max-width: 768px) {
+					background: none;
+				}
+
+			}
+		}
+	}
+	.header{
+		margin-bottom: 3rem;
+		img{
+			max-width: none;
+		}
+	}
+	.header-body{
+		padding-top: 1.2rem;
+			
+		.header-tabs{
+			justify-content: flex-end;
+			.nav-link{
+				padding-top: 1rem;
+				padding-bottom: 1rem;
+			}
+		}
+	}
+	h2{
+		margin-top: 50px;
+	}
+	ul{
+		margin-left: 0;
+		padding: 0;
+		li{
+			margin: 0 auto 10px;
+			list-style: none;
+		}
+	}
+	.card{
+		background-color: transparent;
+		box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.03);
+	}
+	.card-spec-project{
+		margin-top: 30px;
+		p{
+			&.card-text{
+				margin-bottom: 1rem;
+			}
+		}
+		@media screen and (max-width: 991px) {
+			margin-top: 0;
+			margin-bottom: 30px;
+		}
+
+	}
+	.cs-title{
+		font-size: 1.0625rem;
+		font-weight: bold;
+	}
+	img{
+		display: block;
+		margin: 0 auto;
+		max-width: 600px;
+
+		&.cbs{
+			box-shadow: $custom-box-shadow;
+		}
+		&.fw{
+			width: 100%;
+		}
+		&.siz-auto-sm{
+			@media screen and (max-width: 767px) {
+				margin-top: 70px;
+				width: auto;
+			}
+		}
+		&.siz-full-lg{
+			@media screen and (max-width: 992px) {
+				width: 100%;
+			}
+		}
+
+	}
+	figcaption{
+		font-style: italic;
+		text-align: center;
+		font-size: 0.8rem;
+		margin-top: 10px;
+	}
+	p{
+		&.feedback{
+			margin-top: 70px;
+			@media screen and (max-width: 767px) {
+				margin-top: 50px;
+			}
+		}
+	}
+}
+
+		
+
