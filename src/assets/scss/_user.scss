@@ -2,37 +2,57 @@
 // user.scss
 // Use this to write your custom SCSS
 ///////////HOME//////////////
-
-/* .custom-burger-container{
-	position: absolute;
+body{
+	&.overflowed{
+		overflow: hidden;
+	}
+}
+.custom-burger-container{
+	position: fixed;
 	top: 0;
+	left: 100%;
 	width: 100%;
 	height: 100vh;
 	background-color: $custom--white;
 	z-index: 40;
+	transition: all ease-in-out 185ms;
+	
+	&.active{
+		left: 0;
+	}
 	ul{
 		position: absolute;
+		padding: 0;
+		margin: 0 auto;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 		text-align: center;
 		li{
 			padding: 5px 0;
-			margin-bottom: 0;
+			margin-bottom: 0 !important;
+			list-style: none;
+
 			a{
+				display: block;
+				padding:10px 0;
 				font-size: 1.5rem;
 				color:$custom--black;
 				font-weight: bold;
 			}
 		}
 	}
-} */
+}
 
 header{
 	position: fixed;
 	width: 100%;
 	background-color: rgba(255,255,255, .7);
 	z-index: 50;
+
+	&.active{
+		background-color: transparent;
+	}
 	nav{
 	  	text-transform: uppercase;
 	  	font-weight: bold;
@@ -123,39 +143,42 @@ header{
 
 
   		 &.btn-more{
-			  position: relative;
-			  padding: 8px 0;
-			  margin: 30px auto 10px auto;
-			  max-width: 200px;
-			  width: 100%;
-			  text-align: center;
-			  font-weight: normal;
-			  border:solid 1px $custom--black__opa;
-			  border-radius: 0;
-			  text-decoration: none;
-			  transition: all ease-in-out 185ms;
-			  overflow: hidden;
-			  z-index: 20;
+			position: relative;
+			padding: 8px 0;
+			margin: 30px auto 10px auto;
+			max-width: 200px;
+			width: 100%;
+			text-align: center;
+			font-weight: normal;
+			border:solid 1px $custom--black__opa;
+			border-radius: 0;
+			text-decoration: none;
+			transition: all ease-in-out 185ms;
+			overflow: hidden;
+			z-index: 20;
 
-			  &:before{
-			    content:'';
-			    position: absolute;
-			    width: 100%;
-			    height: 100%;
-			    top: 0;
-			    left: -100%;
-			    background-color: $custom--black;
-			    transition: all ease-in-out 185ms;
-			    z-index: -1;
-			  }
-			  &:hover{
+			&:before{
+			  content:'';
+			  position: absolute;
+			  width: 100%;
+			  height: 100%;
+			  top: 0;
+			  left: -100%;
+			  background-color: $custom--black;
+			  transition: all ease-in-out 185ms;
+			  z-index: -1;
+			}
+			&:hover{
 			    color:$white;
 			    font-weight: normal;
 			    &:before{
 			      left: 0;
 			    }
-			  }
 			}
+		}
+		&.linkedin{
+			padding: 0;
+		}
 	}
 .top_container{
   width: 100%;
