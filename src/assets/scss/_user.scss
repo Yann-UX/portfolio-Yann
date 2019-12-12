@@ -132,6 +132,51 @@ header{
 		}
 	}
 }
+
+a{
+	&.back-to-projet{
+		position: relative;
+		display: block;
+		width: 240px;
+		text-align: center;
+		padding: 10px;
+		color: $custom--black;
+		font-weight: bold;
+		margin: 100px auto 50px;
+
+			&:before{
+	    	  	content:"";
+	    	  	position: absolute;
+	    	  	width: 0;
+	    	  	height: 3px;
+	    	  	background-color: $custom--black;
+	    	  	bottom: -1px;
+	    	  	left: -7px;
+	    	  	transition: all ease-in-out 185ms;
+	    	}
+			&:after{
+	    	  	content:"⇤";
+	    	  	position: absolute;
+	    	  	width: 30px;
+    			height: 30px;
+    			font-size: 28px;
+    			bottom: 13px;
+    			left: -5px;
+	    	  	transition: all ease-in-out 185ms;
+	    	}
+	    	&:hover{
+	    	  	color:$custom--black;
+	    	  	text-decoration: none;
+	    	  	&:before{
+	    	  	  	width: 92%;
+	    	  	}
+	    	  	&:after{
+					left: -10px;
+	    	  	}
+	    	}
+	}
+}
+///////////// HOME ///////////
 .content-home{
 	    color: $custom--black;
 	a{
@@ -312,17 +357,105 @@ section{
 			}
 		}
 	}
+	#bkbtn{
+
+		display: none;
+
+		&.show{
+			display: inline-block;
+  			background-color: $custom--black;
+  			width: 40px;
+  			height: 40px;
+  			text-align: center;
+  			position: fixed;
+  			bottom: 30px;
+  			right: 50px;
+  			border: solid 1px $custom--black;
+  			transition: 185ms;
+  			z-index: 1000;
+  			cursor: pointer;
+
+  			@media screen and (max-width: 767px) {
+				right: 10px;
+  			}
+  		}
+
+		
+  		&:hover{
+  			background-color: $custom--white;
+  			&:after{
+  				color: $custom--black;
+			}
+  		}
+		&:after{
+			content: "⋀";
+  			bottom: -4px;
+  			font-weight: bold;
+    		left: 8px;
+    		position: absolute;
+  			font-size: 2em;
+  			color: $custom--white;
+		}
+	}
+	h1{
+		@media screen and (max-width: 767px) {
+			font-size: 2.4rem;
+		}
+	}
+
+	.spec-project{
+		margin-top: 50px;
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+
+		@media screen and (max-width: 575px) {
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
+		.spec-project-item{
+			position: relative;
+			left: 7px;
+			flex-basis: 20%;
+			@media screen and (max-width: 991px) {
+				flex-basis: auto;
+			}
+			@media screen and (max-width: 575px) {
+				flex-basis: calc(100% / 3);
+				margin: 10px 0;
+			}
+
+			&:before{
+				content: "";
+				position: absolute;
+				width: 2px;
+				height: 100%;
+				top: 0;
+				left: -7px;
+				background-color: $shiseido-pink;
+				opacity: .7;
+
+				@media screen and (max-width: 991px) {
+					display: none;
+				}
+				@media screen and (max-width: 575px) {
+					display: block;
+				}
+			}
+		}
+	}
 
 	section{
 		margin: 50px auto;
 		&.section--fluid{
+			margin: 130px auto;
 			padding: 50px 0;
 			background-color: $custom--black;
 			color: $custom--white;
 			box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.3);
 
 			&.section--fluid__proto-shiseido{
-				padding: 0;
+				padding: 50px 0;
 				background: #F9FBFD url("../img/to-web/isometric-flow.jpg") no-repeat top center fixed;
 				-webkit-background-size: cover;
 				background-size: cover;
@@ -342,6 +475,53 @@ section{
 					background: none;
 				}
 
+			}
+			&.section--fluid__livrable{
+				height: 550px;
+				display: flex;
+				padding: 0;
+				background: #F9FBFD;
+				margin-top: 50px;
+				@media screen and (max-width: 659px) {
+					margin-bottom: 50px;
+					height: 350px;
+				}
+				.bloc--fluid__livrable{
+					height: 100%;
+					&:first-child{
+						flex-basis: 60%;
+					}
+					&:last-child{
+						flex-basis: 40%;
+						display: flex;
+						flex-wrap: wrap;
+					}
+				}
+				.img-holder{
+					height: 100%;
+					&.img-holder--1{
+						background: #F9FBFD url("../img/to-web/livrable-001.jpg") no-repeat top center;
+						background-size: cover;
+					}
+					&.img-holder--2{
+						flex-basis: 100%;
+						height: 50%;
+						background: #F9FBFD url("../img/to-web/livrable-02.jpg") no-repeat top center;
+						background-size: cover;
+					}
+					&.img-holder--3{
+						flex-basis: 50%;
+						height: 50%;
+						background: #F9FBFD url("../img/to-web/livrable-03.jpg") no-repeat center;
+						background-size: cover;
+					}
+					&.img-holder--4{
+						flex-basis: 50%;
+						height: 50%;
+						background: #F9FBFD url("../img/to-web/shiseido-vid.gif") no-repeat center;
+						background-size: cover;
+					}
+				}
 			}
 		}
 	}
@@ -377,19 +557,7 @@ section{
 		background-color: transparent;
 		box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.03);
 	}
-	.card-spec-project{
-		margin-top: 30px;
-		p{
-			&.card-text{
-				margin-bottom: 1rem;
-			}
-		}
-		@media screen and (max-width: 991px) {
-			margin-top: 0;
-			margin-bottom: 30px;
-		}
 
-	}
 	.cs-title{
 		font-size: 1.0625rem;
 		font-weight: bold;
