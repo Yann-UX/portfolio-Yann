@@ -10959,6 +10959,25 @@ a:focus, button:focus {
 body.overflowed {
   overflow: hidden; }
 
+.text-muted {
+  color: #141414 !important;
+  opacity: .8; }
+
+.badge-soft-secondary {
+  background-color: #141414 !important;
+  color: #fafafa !important; }
+
+h3.card-title {
+  font-weight: bold; }
+
+.nav-tabs .nav-link:not(.active) {
+  color: #141414 !important;
+  opacity: .6; }
+
+.nav-tabs .nav-link:not(.active):hover {
+  color: #141414 !important;
+  opacity: 1; }
+
 .custom-burger-container {
   position: fixed;
   top: 0;
@@ -11206,7 +11225,10 @@ a.back-to-projet {
         border-color: #fafafa;
         filter: invert(1); }
 
-.content-case-study.content-case-study--shiseido h1, .content-case-study.content-case-study--shiseido h2, .content-case-study.content-case-study--shiseido h3, .content-case-study.content-case-study--shiseido h4 {
+.content-case-study .container-fluid {
+  padding: 0; }
+
+.content-case-study.content-case-study--shiseido h1, .content-case-study.content-case-study--shiseido h2 {
   color: rgba(225, 29, 29, 0.75); }
 
 .content-case-study.content-case-study--shiseido .card-body--origin figure:first-child img {
@@ -11282,6 +11304,9 @@ a.back-to-projet {
       @media screen and (max-width: 575px) {
         .content-case-study .spec-project .spec-project-item:before {
           display: block; } }
+    .content-case-study .spec-project .spec-project-item .card-title {
+      font-size: 0.9375rem !important;
+      color: rgba(225, 29, 29, 0.75); }
 
 .content-case-study section {
   margin: 50px auto; }

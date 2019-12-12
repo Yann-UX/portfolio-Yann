@@ -39,3 +39,39 @@
 <script src="@@webRoot/assets/js/select2.js"></script>
 <script src="@@webRoot/assets/js/tooltip.js"></script>
 <!-- endbuild -->
+
+<!-- Custom -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+          var page = $(this).attr('href'); // Page cible
+          var speed = 750; // Durée de l'animation (en ms)
+          var minusoffset = ($(page).offset().top)-50;
+          $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
+          return false;
+        });
+        $(".custom-burger").on('click', function() {
+          $(this).toggleClass("change");
+          $("body").toggleClass("overflowed");
+          $("header").toggleClass("active");
+          $(".custom-burger-container").toggleClass("active");
+        });
+
+        var bkbtn = $('#bkbtn');
+      
+        $(window).scroll(function() {
+          if ($(window).scrollTop() > 500) {
+            bkbtn.addClass('show');
+          } else {
+            bkbtn.removeClass('show');
+          }
+        });
+      
+        bkbtn.on('click', function(e) {
+          e.preventDefault();
+          $('html, body').animate({scrollTop:0}, '300');
+        });
+
+      });
+    </script>
