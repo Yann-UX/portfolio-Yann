@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A fully featured admin theme which can be used to build CRM, CMS, etc.">
+    <meta name="description" content="Portfolio UX Design de Yann Michalski">
 
     <!-- Libs CSS -->
     <link rel="stylesheet" href="./assets/fonts/feather/feather.min.css">
@@ -4781,6 +4781,42 @@
 
     <!-- Theme JS -->
     <script src="./assets/js/theme.min.js"></script>
+
+    <!-- Custom -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script>
+          $(document).ready(function() {
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+              var page = $(this).attr('href'); // Page cible
+              var speed = 750; // Durée de l'animation (en ms)
+              var minusoffset = ($(page).offset().top)-50;
+              $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
+              return false;
+            });
+            $(".custom-burger").on('click', function() {
+              $(this).toggleClass("change");
+              $("body").toggleClass("overflowed");
+              $("header").toggleClass("active");
+              $(".custom-burger-container").toggleClass("active");
+            });
+
+            var bkbtn = $('#bkbtn');
+      
+            $(window).scroll(function() {
+              if ($(window).scrollTop() > 500) {
+                bkbtn.addClass('show');
+              } else {
+                bkbtn.removeClass('show');
+              }
+            });
+      
+            bkbtn.on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({scrollTop:0}, '300');
+            });
+
+          });
+        </script>
 
   </body>
 </html>
