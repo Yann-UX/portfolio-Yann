@@ -13,13 +13,13 @@
     ================================================== -->
     <div class="main-content content-home">
     
-      <div class="custom-burger-container d-md-none">
+<!--       <div class="custom-burger-container d-md-none">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html">Projets</a></li>
-          <li><a href="index.html">À Propos</a></li>
+          <li><a href="index.html#projet">Projets</a></li>
+          <li><a href="index.html#about">À Propos</a></li>
         </ul>
-      </div>
+      </div> -->
 
       <div class="top_container">
         <header>
@@ -30,11 +30,11 @@
             </ul>
           </nav>
 
-          <span class="custom-burger d-md-none">
+<!--           <span class="custom-burger d-md-none">
             <div class="bar bar1"></div>
             <div class="bar bar2"></div>
             <div class="bar bar3"></div>
-          </span>
+          </span> -->
 
         </header>
         <section class="section-1">
@@ -43,12 +43,12 @@
         </section>
       </div>
   
-      <div class="container mb-6">
-        <h2 class="m-6 text-center" id="projet">Projets</h2>
+      <div class="container pt-6 pb-6" id="projet">
+        <h2 class="text-center m-6">Projets</h2>
         <div class="row">
           <div class="col-12 col-lg-5 offset-lg-1">
             <div class="card">
-              <img src="assets/img/projet/cover/shiseido-cover.jpg" alt="Projet Shiseido" class="card-img-top">
+              <a href="cs_shiseido.html" class="card-banner-click"><img src="assets/img/projet/cover/shiseido-cover.jpg" alt="Projet Shiseido" class="card-img-top"></a>
               <div class="card-body text-center">
                 <h3 class="card-title">
                 <a href="cs_shiseido.html">Shiseido</a>
@@ -71,7 +71,7 @@
           </div>
           <div class="col-12 col-lg-5">
             <div class="card">
-              <img src="assets/img/projet/cover/auchan-cover.jpg" alt="Projet Auchan" class="card-img-top">
+              <a href="cs_auchan.html" class="card-banner-click"><img src="assets/img/projet/cover/auchan-cover.jpg" alt="Projet Auchan" class="card-img-top"></a>
               <div class="card-body text-center">
                 <h3 class="card-title">
                 <a href="cs_auchan.html">Auchan drive</a>
@@ -97,6 +97,47 @@
           </div>
         </div> <!-- / .row -->
       </div><!-- / .container -->
+      <div class="container container--about pb-6">
+        <h2 class="m-6 text-center" id="about">À propos</h2>
+        <div class="row justify-content-center">
+          <div class="col-10 col-sm-12 col-lg-10">
+            <div class="about-content">
+              <p><strong>UX Designer junior</strong>, je vous accompagne dans la création d'expérience qui font sens pour le visiteur.</p>
+              <p>Ma méthode se base sur les principes du <strong>design thinking</strong> et du <strong>lean UX</strong>. Des cycles courts (sprint) permettant d'obtenir rapidement des résultats concrets.</p>
+              <div class="about-service">
+                <div class="service-content">
+                  <div class="service-content-title">Recherches</div>
+                  <ul>
+                    <li>Test empathie</li>
+                    <li>Analytics</li>
+                    <li>Benchmark</li>
+                    <li>Analyse ergonomique</li>
+                    <li>Veille</li>
+                  </ul>
+                </div>
+                <div class="service-content">
+                  <div class="service-content-title">Idéation & création</div>
+                    <ul>
+                      <li>Définition des besoins</li>
+                      <li>Atelier de co-création</li>
+                      <li>Sketch</li>
+                      <li>Prototypage rapide</li>
+                    </ul>
+                </div>
+                <div class="service-content">
+                  <div class="service-content-title">User centric</div>
+                    <ul>
+                      <li>Personnas</li>
+                      <li>Customer Journey Map</li>
+                      <li>Recrutement utilisateur</li>
+                      <li>Test utilisateur</li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   
       <div class="container-fluid">
         <footer class="text-center m-4"><a class="linkedin" href="linkedin" target="_blank" title="Voir mon profil sur Linkedin"><img src="assets/img/home/linkedin.svg" alt="Logo linkedin"></a></footer>
@@ -108,23 +149,6 @@
     ================================================== -->
     @@include("partials/scripts.html")
 
-    <script>
-      $(document).ready(function() {
-        $('.js-scrollTo').on('click', function() { // Au clic sur un élément
-          var page = $(this).attr('href'); // Page cible
-          var speed = 750; // Durée de l'animation (en ms)
-          var minusoffset = ($(page).offset().top)-50;
-          $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
-          return false;
-        });
-        $(".custom-burger").on('click', function() {
-          $(this).toggleClass("change");
-          $("body").toggleClass("overflowed");
-          $("header").toggleClass("active");
-          $(".custom-burger-container").toggleClass("active");
-        });
-      });
-    </script>
 
 
 

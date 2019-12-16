@@ -11056,6 +11056,9 @@ a.back-to-projet {
       width: 92%; }
     a.back-to-projet:hover:after {
       left: -10px; }
+  @media screen and (max-width: 768px) {
+    a.back-to-projet {
+      margin: 70px auto 30px; } }
 
 .content-home {
   color: #141414; }
@@ -11095,6 +11098,8 @@ a.back-to-projet {
         .content-home a.btn-more:hover:before {
           left: 0; }
     .content-home a.linkedin {
+      padding: 0; }
+    .content-home a.card-banner-click {
       padding: 0; }
   .content-home .top_container {
     width: 100%;
@@ -11173,6 +11178,24 @@ a.back-to-projet {
       .content-home footer a:hover img {
         border-color: #fafafa;
         filter: invert(1); }
+  .content-home .container--about .about-service {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around; }
+    .content-home .container--about .about-service .service-content .service-content-title {
+      font-weight: bold;
+      margin-bottom: 15px; }
+    .content-home .container--about .about-service .service-content ul {
+      padding: 0;
+      margin: 0; }
+      .content-home .container--about .about-service .service-content ul li {
+        list-style: none; }
+    @media screen and (max-width: 768px) {
+      .content-home .container--about .about-service .service-content {
+        margin-bottom: 20px; } }
+    @media screen and (max-width: 768px) {
+      .content-home .container--about .about-service {
+        flex-direction: column; } }
 
 .content-case-study .container-fluid {
   padding: 0; }
@@ -11183,8 +11206,92 @@ a.back-to-projet {
 .content-case-study.content-case-study--shiseido .card-body--origin figure:first-child img {
   max-width: 200px; }
 
+.content-case-study.content-case-study--shiseido .spec-project .spec-project-item .card-title {
+  color: rgba(225, 29, 29, 0.75); }
+  .content-case-study.content-case-study--shiseido .spec-project .spec-project-item .card-title:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    background: rgba(225, 29, 29, 0.75);
+    left: -7px;
+    opacity: .7; }
+    @media screen and (max-width: 991px) {
+      .content-case-study.content-case-study--shiseido .spec-project .spec-project-item .card-title:before {
+        display: none; } }
+    @media screen and (max-width: 575px) {
+      .content-case-study.content-case-study--shiseido .spec-project .spec-project-item .card-title:before {
+        display: block; } }
+
+.content-case-study.content-case-study--shiseido .img-holder {
+  height: 100%; }
+  .content-case-study.content-case-study--shiseido .img-holder.img-holder--1 {
+    background: #F9FBFD url("../img/to-web/shiseido/livrable-001.jpg") no-repeat top center;
+    background-size: cover; }
+  .content-case-study.content-case-study--shiseido .img-holder.img-holder--2 {
+    flex-basis: 100%;
+    height: 50%;
+    background: #F9FBFD url("../img/to-web/shiseido/livrable-02.jpg") no-repeat top center;
+    background-size: cover; }
+  .content-case-study.content-case-study--shiseido .img-holder.img-holder--3 {
+    flex-basis: 50%;
+    height: 50%;
+    background: #F9FBFD url("../img/to-web/shiseido/livrable-03.jpg") no-repeat center;
+    background-size: cover; }
+  .content-case-study.content-case-study--shiseido .img-holder.img-holder--4 {
+    flex-basis: 50%;
+    height: 50%;
+    background: #F9FBFD url("../img/to-web/shiseido/shiseido-vid.gif") no-repeat center;
+    background-size: cover; }
+
+.content-case-study.content-case-study--auchan h1, .content-case-study.content-case-study--auchan h2 {
+  color: rgba(2, 131, 67, 0.75); }
+
+.content-case-study.content-case-study--auchan .spec-project .spec-project-item .card-title {
+  color: rgba(2, 131, 67, 0.75); }
+  .content-case-study.content-case-study--auchan .spec-project .spec-project-item .card-title:before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    background: rgba(2, 131, 67, 0.75);
+    left: -7px;
+    opacity: .7; }
+    @media screen and (max-width: 991px) {
+      .content-case-study.content-case-study--auchan .spec-project .spec-project-item .card-title:before {
+        display: none; } }
+    @media screen and (max-width: 575px) {
+      .content-case-study.content-case-study--auchan .spec-project .spec-project-item .card-title:before {
+        display: block; } }
+
+.content-case-study.content-case-study--auchan .bloc--fluid__livrable .img-holder {
+  height: 100%; }
+  .content-case-study.content-case-study--auchan .bloc--fluid__livrable .img-holder.img-holder--1 {
+    background: #218467 url("../img/to-web/auchan/livrable-01.jpg") no-repeat top center;
+    background-size: cover; }
+  .content-case-study.content-case-study--auchan .bloc--fluid__livrable .img-holder.img-holder--3 {
+    flex-basis: 50%;
+    height: 100%;
+    background: #218467 url("../img/to-web/auchan/livrable-03.jpg") no-repeat center;
+    background-size: 200%; }
+  .content-case-study.content-case-study--auchan .bloc--fluid__livrable .img-holder.img-holder--4 {
+    flex-basis: 50%;
+    height: 100%;
+    background: #218467 url("../img/to-web/auchan/livrable-04.jpg") no-repeat center;
+    background-size: 200%; }
+
 .content-case-study #bkbtn {
   display: none; }
+  .content-case-study #bkbtn svg {
+    position: relative;
+    width: 27px;
+    height: 27px;
+    top: 5px; }
+    .content-case-study #bkbtn svg path {
+      fill: #fafafa;
+      transition: all ease-in-out 185ms; }
   .content-case-study #bkbtn.show {
     display: inline-block;
     background-color: #141414;
@@ -11203,20 +11310,22 @@ a.back-to-projet {
         right: 10px; } }
   .content-case-study #bkbtn:hover {
     background-color: #fafafa; }
-    .content-case-study #bkbtn:hover:after {
-      color: #141414; }
-  .content-case-study #bkbtn:after {
-    content: "⋀";
-    bottom: -4px;
-    font-weight: bold;
-    left: 8px;
-    position: absolute;
-    font-size: 2em;
-    color: #fafafa; }
+    .content-case-study #bkbtn:hover svg path {
+      fill: #141414; }
 
-@media screen and (max-width: 767px) {
-  .content-case-study h1 {
-    font-size: 2.4rem; } }
+.content-case-study h1 {
+  margin-bottom: 0; }
+  @media screen and (max-width: 767px) {
+    .content-case-study h1 {
+      font-size: 2.4rem; } }
+
+.content-case-study .academic {
+  margin-bottom: 30px;
+  font-size: 0.8em;
+  font-weight: 500; }
+  .content-case-study .academic a {
+    color: #12263F;
+    text-decoration: underline; }
 
 .content-case-study .spec-project {
   margin-top: 50px;
@@ -11238,55 +11347,72 @@ a.back-to-projet {
       .content-case-study .spec-project .spec-project-item {
         flex-basis: calc(100% / 3);
         margin: 10px 0; } }
-    .content-case-study .spec-project .spec-project-item:before {
-      content: "";
-      position: absolute;
-      width: 2px;
-      height: 100%;
-      top: 0;
-      left: -7px;
-      background-color: rgba(225, 29, 29, 0.75);
-      opacity: .7; }
-      @media screen and (max-width: 991px) {
-        .content-case-study .spec-project .spec-project-item:before {
-          display: none; } }
-      @media screen and (max-width: 575px) {
-        .content-case-study .spec-project .spec-project-item:before {
-          display: block; } }
     .content-case-study .spec-project .spec-project-item .card-title {
       font-size: 0.9375rem !important;
-      color: rgba(225, 29, 29, 0.75); }
+      font-weight: 500; }
 
 .content-case-study section {
-  margin: 50px auto; }
+  margin: 70px auto; }
+  @media screen and (max-width: 767px) {
+    .content-case-study section {
+      margin: 50px auto; } }
+  .content-case-study section.after-fluid h2 {
+    margin-top: 10px; }
+  .content-case-study section#livrable {
+    margin-bottom: 10px; }
+    .content-case-study section#livrable h2 {
+      margin-top: 50px; }
+      @media screen and (max-width: 767px) {
+        .content-case-study section#livrable h2 {
+          margin-top: 0px; } }
+  @media screen and (max-width: 767px) {
+    .content-case-study section#apprentissage h2 {
+      margin-top: 30px; } }
   .content-case-study section.section--fluid {
     margin: 130px auto;
-    padding: 50px 0;
-    background-color: #141414;
+    background-color: rgba(0, 0, 0, 0.45);
     color: #fafafa;
     box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.3); }
-    .content-case-study section.section--fluid.section--fluid__proto-shiseido {
+    @media screen and (max-width: 767px) {
+      .content-case-study section.section--fluid {
+        margin: 70px auto; } }
+    .content-case-study section.section--fluid.section--fluid__proto {
       padding: 50px 0;
-      background: #F9FBFD url("../img/to-web/isometric-flow.jpg") no-repeat top center fixed;
       background-size: cover;
       color: #000;
       box-shadow: none; }
-      .content-case-study section.section--fluid.section--fluid__proto-shiseido .text-holder {
+      .content-case-study section.section--fluid.section--fluid__proto .text-holder {
+        position: relative;
+        left: -42px;
         padding: 70px 30px;
         background-color: #F9FBFD; }
-        .content-case-study section.section--fluid.section--fluid__proto-shiseido .text-holder h2 {
+        .content-case-study section.section--fluid.section--fluid__proto .text-holder h2 {
           margin-top: 0; }
-        .content-case-study section.section--fluid.section--fluid__proto-shiseido .text-holder p {
+        .content-case-study section.section--fluid.section--fluid__proto .text-holder p {
           margin-bottom: 0; }
+        @media screen and (max-width: 767px) {
+          .content-case-study section.section--fluid.section--fluid__proto .text-holder {
+            padding: 0;
+            margin-bottom: 20px;
+            left: 0; } }
       @media screen and (max-width: 768px) {
-        .content-case-study section.section--fluid.section--fluid__proto-shiseido {
-          background: none; } }
+        .content-case-study section.section--fluid.section--fluid__proto {
+          padding: 10px; } }
+      .content-case-study section.section--fluid.section--fluid__proto.section--fluid__proto-shiseido {
+        background: #F9FBFD url("../img/to-web/shiseido/isometric-flow.jpg") no-repeat top center fixed; }
+        @media screen and (max-width: 768px) {
+          .content-case-study section.section--fluid.section--fluid__proto.section--fluid__proto-shiseido {
+            background: none; } }
+      .content-case-study section.section--fluid.section--fluid__proto.section--fluid__proto-auchan {
+        background: #F9FBFD url("../img/to-web/auchan/proto-auchan.jpg") no-repeat top center fixed; }
+        @media screen and (max-width: 768px) {
+          .content-case-study section.section--fluid.section--fluid__proto.section--fluid__proto-auchan {
+            background: none; } }
     .content-case-study section.section--fluid.section--fluid__livrable {
       height: 550px;
       display: flex;
-      padding: 0;
       background: #F9FBFD;
-      margin-top: 50px; }
+      margin-top: 0; }
       @media screen and (max-width: 659px) {
         .content-case-study section.section--fluid.section--fluid__livrable {
           margin-bottom: 50px;
@@ -11299,26 +11425,39 @@ a.back-to-projet {
           flex-basis: 40%;
           display: flex;
           flex-wrap: wrap; }
-      .content-case-study section.section--fluid.section--fluid__livrable .img-holder {
-        height: 100%; }
-        .content-case-study section.section--fluid.section--fluid__livrable .img-holder.img-holder--1 {
-          background: #F9FBFD url("../img/to-web/livrable-001.jpg") no-repeat top center;
-          background-size: cover; }
-        .content-case-study section.section--fluid.section--fluid__livrable .img-holder.img-holder--2 {
-          flex-basis: 100%;
-          height: 50%;
-          background: #F9FBFD url("../img/to-web/livrable-02.jpg") no-repeat top center;
-          background-size: cover; }
-        .content-case-study section.section--fluid.section--fluid__livrable .img-holder.img-holder--3 {
-          flex-basis: 50%;
-          height: 50%;
-          background: #F9FBFD url("../img/to-web/livrable-03.jpg") no-repeat center;
-          background-size: cover; }
-        .content-case-study section.section--fluid.section--fluid__livrable .img-holder.img-holder--4 {
-          flex-basis: 50%;
-          height: 50%;
-          background: #F9FBFD url("../img/to-web/shiseido-vid.gif") no-repeat center;
-          background-size: cover; }
+  .content-case-study section .benchmark-logo {
+    display: flex;
+    justify-content: space-between; }
+    .content-case-study section .benchmark-logo div {
+      padding: 20px 20px 0 20px; }
+    @media screen and (max-width: 767px) {
+      .content-case-study section .benchmark-logo {
+        flex-wrap: wrap; } }
+    @media screen and (max-width: 499px) {
+      .content-case-study section .benchmark-logo {
+        justify-content: center; } }
+  .content-case-study section .retour-itw {
+    display: flex;
+    justify-content: space-between; }
+    .content-case-study section .retour-itw div {
+      padding: 20px 20px 0 20px; }
+    @media screen and (max-width: 767px) {
+      .content-case-study section .retour-itw {
+        flex-wrap: wrap; } }
+  .content-case-study section .correction-picture {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around; }
+    .content-case-study section .correction-picture img {
+      width: 100%; }
+    @media screen and (max-width: 575px) {
+      .content-case-study section .correction-picture {
+        flex-wrap: wrap; } }
+  .content-case-study section .correction-text {
+    margin-bottom: 50px; }
+    @media screen and (max-width: 575px) {
+      .content-case-study section .correction-text {
+        margin-bottom: 20px; } }
 
 .content-case-study .header {
   margin-bottom: 3rem; }
@@ -11335,6 +11474,9 @@ a.back-to-projet {
 
 .content-case-study h2 {
   margin-top: 50px; }
+  @media screen and (max-width: 767px) {
+    .content-case-study h2 {
+      margin-top: 10px; } }
 
 .content-case-study ul {
   margin-left: 0;
@@ -11361,20 +11503,24 @@ a.back-to-projet {
     width: 100%; }
   @media screen and (max-width: 767px) {
     .content-case-study img.siz-auto-sm {
-      margin-top: 70px;
+      margin-top: 10px;
       width: auto; } }
   @media screen and (max-width: 992px) {
     .content-case-study img.siz-full-lg {
       width: 100%; } }
+  @media screen and (max-width: 575px) {
+    .content-case-study img.siz-full-lg {
+      width: auto; } }
 
 .content-case-study figcaption {
   font-style: italic;
   text-align: center;
   font-size: 0.8rem;
-  margin-top: 10px; }
+  margin-top: 10px;
+  font-weight: 600; }
 
 .content-case-study p.feedback {
   margin-top: 70px; }
   @media screen and (max-width: 767px) {
     .content-case-study p.feedback {
-      margin-top: 50px; } }
+      margin-top: 20px; } }
