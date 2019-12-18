@@ -11201,9 +11201,9 @@ a.back-to-projet {
         line-height: 1.5rem; } }
   @media screen and (max-width: 768px) {
     .content-home .top_container {
-      -ms-background-position-x: 20%;
-      background-position-x: 20%; } }
-  @media screen and (max-width: 576px) {
+      -ms-background-position-x: 40%;
+      background-position-x: 40%; } }
+  @media screen and (max-width: 575px) {
     .content-home .top_container {
       background-size: auto;
       background-position-x: 60%;
@@ -11214,7 +11214,8 @@ a.back-to-projet {
       .content-home section.section-1 p {
         margin-top: 35px;
         font-size: 1rem;
-        line-height: 1.2rem; } }
+        line-height: 1.2rem;
+        font-weight: 500; } }
   .content-home footer a {
     width: 40px;
     margin: 0 auto;
@@ -11247,6 +11248,35 @@ a.back-to-projet {
     @media screen and (max-width: 768px) {
       .content-home .container--about .about-service {
         flex-direction: column; } }
+  .content-home .icon-scroll {
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(50%);
+    width: 35px;
+    height: 60px;
+    margin-left: -20px;
+    margin-top: -35px;
+    border: solid 1px #141414;
+    border-radius: 25px; }
+  .content-home .icon-scroll:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: #141414;
+    margin-left: -4px;
+    top: 8px;
+    border-radius: 4px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: scrollanimation; }
+
+@keyframes scrollanimation {
+  from { }
+  to {
+    transform: translateY(30px); } }
 
 .content-case-study .container-fluid {
   padding: 0; }
@@ -11424,6 +11454,12 @@ a.back-to-projet {
     background-color: rgba(0, 0, 0, 0.45);
     color: #fafafa;
     box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.3); }
+    .content-case-study section.section--fluid.section--fluid--shiseido {
+      background-color: rgba(0, 0, 0, 0.45);
+      color: #fafafa; }
+    .content-case-study section.section--fluid.section--fluid--auchan {
+      background-color: rgba(2, 131, 67, 0.45);
+      color: #fafafa; }
     @media screen and (max-width: 767px) {
       .content-case-study section.section--fluid {
         margin: 70px auto; } }
@@ -11449,6 +11485,9 @@ a.back-to-projet {
       @media screen and (max-width: 768px) {
         .content-case-study section.section--fluid.section--fluid__proto {
           padding: 10px; } }
+      @media screen and (max-width: 575px) {
+        .content-case-study section.section--fluid.section--fluid__proto {
+          padding: 0; } }
       .content-case-study section.section--fluid.section--fluid__proto.section--fluid__proto-shiseido {
         background: #F9FBFD url("../img/to-web/shiseido/isometric-flow.jpg") no-repeat top center fixed; }
         @media screen and (max-width: 768px) {
@@ -11575,3 +11614,16 @@ a.back-to-projet {
   @media screen and (max-width: 767px) {
     .content-case-study p.feedback {
       margin-top: 20px; } }
+
+.content-case-study .link-figma {
+  position: relative;
+  top: 20px;
+  color: #141414;
+  font-weight: 600; }
+  @media screen and (max-width: 767px) {
+    .content-case-study .link-figma {
+      top: 10px; } }
+  .content-case-study .link-figma.link-figma--shiseido {
+    color: rgba(225, 29, 29, 0.75); }
+  .content-case-study .link-figma.link-figma--auchan {
+    color: rgba(2, 131, 67, 0.75); }
