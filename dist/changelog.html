@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./assets/css/theme-dark.min.css" id="stylesheetDark">
 
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Dashkit</title>
   </head>
@@ -3779,8 +3780,10 @@
     <!-- Custom -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
           $(document).ready(function() {
+            AOS.init();
             $('.js-scrollTo').on('click', function() { // Au clic sur un élément
               var page = $(this).attr('href'); // Page cible
               var speed = 750; // Durée de l'animation (en ms)

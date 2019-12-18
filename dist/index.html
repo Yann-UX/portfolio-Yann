@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./assets/css/theme-dark.min.css" id="stylesheetDark">
 
     
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <title>Yann Michalski - UX Designer</title>
   </head>
@@ -61,6 +62,7 @@
               <h1>Yann<br />Michalski <em>UX designer</em></h1>
               <p>Découvrir, explorer, comprendre et ...<br/>améliorer</p>
         </section>
+        <div class='icon-scroll d-none d-md-block'></div>
       </div>
   
       <div class="container pt-6 pb-6" id="projet">
@@ -123,7 +125,7 @@
           <div class="col-10 col-sm-12 col-lg-10">
             <div class="about-content">
               <p><strong>UX Designer junior</strong>, je vous accompagne dans la création d'expérience qui font sens pour le visiteur.</p>
-              <p>Ma méthode se base sur les principes du <strong>design thinking</strong> et du <strong>lean UX</strong>. Des cycles courts (sprint) permettant d'obtenir rapidement des résultats concrets.</p>
+              <p>Ma méthode se base sur le <strong>design thinking</strong> et l'utilisation de cycles courts (sprint) permettant d'obtenir rapidement des résultats concrets.</p>
               <div class="about-service">
                 <div class="service-content">
                   <div class="service-content-title">Recherches</div>
@@ -191,8 +193,10 @@
     <!-- Custom -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
           $(document).ready(function() {
+            AOS.init();
             $('.js-scrollTo').on('click', function() { // Au clic sur un élément
               var page = $(this).attr('href'); // Page cible
               var speed = 750; // Durée de l'animation (en ms)
@@ -225,9 +229,6 @@
 
           });
         </script>
-
-
-
 
   </body>
 </html>
