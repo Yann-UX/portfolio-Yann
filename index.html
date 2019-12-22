@@ -34,13 +34,13 @@
     ================================================== -->
     <div class="main-content content-home">
     
-<!--       <div class="custom-burger-container d-md-none">
+      <div class="custom-burger-container d-md-none">
         <ul>
           <li><a href="index.html">Accueil</a></li>
           <li><a href="index.html#projet">Projets</a></li>
           <li><a href="index.html#about">À Propos</a></li>
         </ul>
-      </div> -->
+      </div>
 
       <div class="top_container">
         <header>
@@ -51,11 +51,11 @@
             </ul>
           </nav>
 
-<!--           <span class="custom-burger d-md-none">
+          <span class="custom-burger d-md-none">
             <div class="bar bar1"></div>
             <div class="bar bar2"></div>
             <div class="bar bar3"></div>
-          </span> -->
+          </span>
 
         </header>
         <section class="section-1">
@@ -206,6 +206,12 @@
             });
             $(".custom-burger").on('click', function() {
               $(this).toggleClass("change");
+              $("body").toggleClass("overflowed");
+              $("header").toggleClass("active");
+              $(".custom-burger-container").toggleClass("active");
+            });
+            $(".custom-burger-container li a").on('click', function() {
+              $(".custom-burger").toggleClass("change");
               $("body").toggleClass("overflowed");
               $("header").toggleClass("active");
               $(".custom-burger-container").toggleClass("active");
