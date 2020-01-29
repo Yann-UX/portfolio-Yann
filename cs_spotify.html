@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Portfolio UX Design de Yann Michalski">
+
+    <!-- Libs CSS -->
+    <link rel="stylesheet" href="./assets/fonts/feather/feather.min.css">
+    <link rel="stylesheet" href="./assets/libs/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/libs/quill/dist/quill.core.css">
+    <link rel="stylesheet" href="./assets/libs/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="./assets/libs/highlight.js/styles/vs2015.css">
+
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+    <!-- Theme CSS -->
+      
+    <link rel="stylesheet" href="./assets/css/theme.min.css" id="stylesheetLight">
+
+    <link rel="stylesheet" href="./assets/css/theme-dark.min.css" id="stylesheetDark">
+
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Spotify - Fonctionnalité redesign</title>
+
+  </head>
+  <body>
+
+
+    <!-- MAIN CONTENT
+    ================================================== -->
+    <div class="main-content content-case-study content-case-study--spotify">
+
+        <a id="bkbtn">
+          <svg width="451.847px" height="451.846px" viewBox="0 0 451.847 451.846">
+            <path d="M248.292,106.406l194.281,194.29c12.365,12.359,12.365,32.391,0,44.744c-12.354,12.354-32.391,12.354-44.744,0
+            L225.923,173.529L54.018,345.44c-12.36,12.354-32.395,12.354-44.748,0c-12.359-12.354-12.359-32.391,0-44.75L203.554,106.4
+            c6.18-6.174,14.271-9.259,22.369-9.259C234.018,97.141,242.115,100.232,248.292,106.406z"/>
+          </svg>
+        </a>
+        <div class="custom-burger-container d-md-none">
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="index.html#projet">Projets</a></li>
+            <li><a href="index.html#about">À Propos</a></li>
+          </ul>
+        </div>
+        <div class="header">
+        <header>
+          <nav class="d-none d-md-block">
+            <ul>
+              <li><a href="index.html#projet">Projets</a></li>
+              <li><a href="index.html#about">À Propos</a></li>
+            </ul>
+          </nav>
+          <span class="custom-burger d-md-none">
+            <div class="bar bar1"></div>
+            <div class="bar bar2"></div>
+            <div class="bar bar3"></div>
+          </span>
+        </header>
+
+<!-- Image -->
+        <img src="assets/img/covers/spotify-cover.jpg" class="header-img-top" alt="Projet Spotify">
+        
+        <div class="container d-none d-md-block">
+
+          <div class="header-body">
+            <div class="row align-items-center">
+              <div class="col">
+                <!-- Nav -->
+                <ul class="nav nav-tabs nav-overflow header-tabs">
+                  <li class="nav-item">
+                    <a href="#contexte" class="nav-link js-scrollTo">
+                      Contexte
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#recherches" class="nav-link js-scrollTo">
+                      Recherches
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#approche" class="nav-link js-scrollTo">
+                      Approche
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div> <!-- / .header-body -->
+
+        </div>
+
+      </div> <!-- / .header -->
+      
+      <!-- CONTENT -->
+      <div class="container">
+
+        <section id="contexte">
+          <div class="row justify-content-center">
+            <div class=" col-10">    
+              <h1>Spotify : Redesign de fonctionnalité</h1>
+              <p class="academic">Projet personnel réalisé dans le cadre de <u>redesign rapide</u></p>
+              <h2>Contexte</h2>
+              <p>Avec plus de 200 millions d'utilisateurs actifs mensuel, le géant du streaming musical lancé en 2008 est devenue LA référence pour les mélomanes du monde entier.</p>
+              <p>Décliné en différentes versions, la plateforme est accessible via une multitude de support : Web player, application version smartphone ou ordinateur.</p>
+            </div>
+          </div>
+        </section>
+        <section id="recherches">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <h2>Recherches</h2>
+              <p class="mb-4">Pierre angulaire du modèle Spotify, la découverte de <strong>playlist génère à elle seule 2/3 de l'activité</strong> des utilisateurs.</p>
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/charts-spotify.jpg" alt="Activité liée aux playlist sur Spotify">
+                <figcaption class="text-muted">Spotify et les playlist</figcaption>
+              </figure>
+              <p>Dans ce contexte, je me suis penché sur cette fonctionnalité qui, bien que simple, peut se révéler déroutante pour l'utilisateur notamment avec la création d'une multitude de doublons.</p>
+              <p class="mb-5">Les exemples suivants sont extrait des version web player, application mobile et application bureau :</p>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-10">
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/web-app.jpg" alt="Version web app de Spotify">
+                <figcaption class="text-muted">Version web app de Spotify</figcaption>
+              </figure>
+              <p class="mb-6">Mauvais élève du trio, le lecteur web, malgré sa grande capacité d'affichage, <strong>ne permet pas de vérifier si un titre est présent</strong> dans une playlist avant de l'ajouter à celle-ci. Ni indication visuelle, ni message d'information à l'ajout, <strong>les doublons se créent</strong> sans que l'utilisateur n'en soit informé.</p>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-10">
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/desk-app.jpg" alt="Version desk app Spotify">
+                <figcaption class="text-muted">Version desktop de Spotify</figcaption>
+              </figure>
+              <p class="mb-6">Là encore, <strong>aucune indication visuelle</strong> ne permet de savoir si un titre est déjà présent dans sa playlist.
+              Cette fois, un message attire l'attention de l'utilisateur mais son manque de clarté prête à <strong>confusion quant à l'action à effectuer</strong>.
+              Au choix, l'utilisateur pourra « Ajouter quand même » ou « Ignorer le doublon » : Un wording efficace pour certains, perturbant pour d'autres.</p>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-10">
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/smart-app.jpg" alt="Version smartphone de Spotify">
+                <figcaption class="text-muted">Version smartphone de Spotify</figcaption>
+              </figure>
+              <p class="mb-6">La version smartphone s'en tire mieux à cet exercice. Si toujours <strong>aucune indication visuelle</strong> n'est présente, la fenêtre d'information prévenant de la création d'un doublon est cette fois lisible avec une <strong>hiérarchisation cohérente et un choix de termes pertinent</strong>.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="container">
+        <section id="approche" class="after-fluid">
+          <div class="row justify-content-center">
+            <div class="col-10">
+              <h2>Approche</h2>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-10">
+              <p>Le problème majeur de cette fonctionnalité est lié à la <strong>lisibilité d'information</strong>, tant en terme visuel que de wording. Un travail me semble donc nécessaire pour offrir à l'utilisateur une <strong>plus grande maîtrise de ses titres et playlist</strong> avec un aperçu direct du <strong>statut du titre</strong> (liké, dans une playlist, dans plusieurs playlist).</p>
+              <h3 class="cs-title mt-6 mb-5">Proposition Une : Icône et sous-menu</h3>
+              <p class="mb-4">Directement intégrée dans la carte du titre, la fonction playlist est accessible via une <strong>icône dédiée</strong>.
+              Celle-ci bénéficie d'un <strong>état de surbrillance</strong> si le titre est déjà dans une playlist (ou plusieurs). Un sous menu permet de modifier la présence d'un titre dans une playlist.</p>
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-2">
+                <img class="fw" src="assets/img/to-web/spotify/prop-01.jpg" alt="Icône de playlist">
+                <figcaption class="text-muted">Une icône playlist est ajoutée</figcaption>
+              </figure>
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/prop-02.jpg" alt="Icône en surbrillance">
+                <figcaption class="text-muted">L'icône en surbrillance indique la présence du titre en playlist</figcaption>
+              </figure>
+              <h3 class="cs-title mt-6 mb-5">Proposition Deux : Sous-menu et chips</h3>
+              <p>Le principe du sous-menu est conservé mais le nom des playlist dans lesquelles le titre se trouve est <strong>ajouté dans la carte du titre</strong>.</p>
+              <p class="mb-4">Cette option, très visuelle, reste cependant <strong>problématique dans un usage mobile</strong>.</p>
+
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/prop-03.jpg" alt="Marqueur sur la carte du titre">
+                <figcaption class="text-muted">Un marqueur est ajouté sur la carte du titre</figcaption>
+              </figure>
+              <h3 class="cs-title mt-6 mb-5">Proposition Trois: Sous-menu uniquement</h3>
+              <p class="mb-4">La fonctionnement actuel est conservé mais <strong>un effet est appliqué aux playlist où le titre est déjà présent</strong> (opacité et surbrillance du pictogramme). Un texte est également ajouté pour <strong>signifier explicitement</strong> la présence du titre.</p>
+
+              <figure data-aos="fade-up" data-aos-duration="600" data-aos-offset="200" class="mb-4">
+                <img class="fw" src="assets/img/to-web/spotify/prop-04.jpg" alt="La playlist contenant déjà le titre">
+                <figcaption class="text-muted">La playlist contenant déjà le titre est indisponible</figcaption>
+              </figure>
+              <p class="mt-6">A noter dans ces trois propositions de l'<strong>impossibilité d'ajouter un titre déjà présent dans une playlist</strong>.
+              Les fenêtres d'information sont, en conséquence,  retirées du processus.</p>
+              <p>La suppression d'un titre dans une playlist reste quant à elle inchangée.</p>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <a href="index.html" class="back-to-projet" title="Tous les projets">Retourner aux projets</a>
+    </div> <!-- / .main-content -->
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@shopify/draggable/lib/es5/draggable.bundle.legacy.js"></script>
+    <script src="./assets/libs/autosize/dist/autosize.min.js"></script>
+    <script src="./assets/libs/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="./assets/libs/list.js/dist/list.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/select2/dist/js/select2.min.js"></script>
+    <script src="./assets/libs/chart.js/Chart.extension.min.js"></script>
+
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+
+    <!-- Custom -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          $(document).ready(function() {
+            AOS.init();
+            $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+              var page = $(this).attr('href'); // Page cible
+              var speed = 750; // Durée de l'animation (en ms)
+              var minusoffset = ($(page).offset().top)-50;
+              $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
+              return false;
+            });
+            $(".custom-burger").on('click', function() {
+              $(this).toggleClass("change");
+              $("body").toggleClass("overflowed");
+              $("header").toggleClass("active");
+              $(".custom-burger-container").toggleClass("active");
+            });
+            $(".custom-burger-container li a").on('click', function() {
+              $(".custom-burger").toggleClass("change");
+              $("body").toggleClass("overflowed");
+              $("header").toggleClass("active");
+              $(".custom-burger-container").toggleClass("active");
+            });
+
+            var bkbtn = $('#bkbtn');
+      
+            $(window).scroll(function() {
+              if ($(window).scrollTop() > 500) {
+                bkbtn.addClass('show');
+              } else {
+                bkbtn.removeClass('show');
+              }
+            });
+      
+            bkbtn.on('click', function(e) {
+              e.preventDefault();
+              $('html, body').animate({scrollTop:0}, '300');
+            });
+
+            $(".custom-filter li").on('click', function() {
+              $(".custom-filter li").removeClass("active");
+              $(this).addClass("active");
+              var selectedtype = ($(this).data("project-type"));
+              $(".project-type[data-project-type*='all']").hide();
+              $(".project-type[data-project-type*='" + selectedtype + "']").show();
+  
+            });
+
+
+          });
+        </script>
+
+  </body>
+</html> 

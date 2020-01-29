@@ -4821,6 +4821,15 @@
               $('html, body').animate({scrollTop:0}, '300');
             });
 
+            $(".custom-filter li").on('click', function() {
+              $(".custom-filter li").removeClass("active");
+              $(this).addClass("active");
+              var selectedtype = ($(this).data("project-type"));
+              $(".project-type[data-project-type*='all']").hide();
+              $(".project-type[data-project-type*='" + selectedtype + "']").show();
+  
+            });
+
 
           });
         </script>
