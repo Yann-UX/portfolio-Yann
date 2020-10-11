@@ -38,19 +38,22 @@
 <script src="@@webRoot/assets/js/quill.js"></script>
 <script src="@@webRoot/assets/js/select2.js"></script>
 <script src="@@webRoot/assets/js/tooltip.js"></script>
+<script src="@@webRoot/assets/js/lightbox.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/macy@2"></script> -->
 <!-- endbuild -->
 
 <!-- Custom -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script>
       $(document).ready(function() {
         AOS.init();
         $('.js-scrollTo').on('click', function() { // Au clic sur un élément
           var page = $(this).attr('href'); // Page cible
           var speed = 750; // Durée de l'animation (en ms)
-          var minusoffset = ($(page).offset().top)-50;
+          var minusoffset = ($(page).offset().top)-100;
           $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
           return false;
         });
@@ -82,6 +85,8 @@
           $('html, body').animate({scrollTop:0}, '300');
         });
 
+
+
         $(".custom-filter li").on('click', function() {
           $(".custom-filter li").removeClass("active");
           $(this).addClass("active");
@@ -91,6 +96,21 @@
   
         });
 
+        new SimpleLightbox({elements: '.lightbox-picture a'});
+        new SimpleLightbox({elements: '.lightbox-link'});
+/////////////////
+var macy = Macy({
+    container: '#macy-container',
+    trueOrder: true,
+    margin: 10,
+    columns: 4,
+    breakAt: {
+        767: 2,
+        400: 1
+    }
+});
+
+///////////////
 
       });
     </script>

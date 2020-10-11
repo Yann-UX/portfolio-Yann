@@ -16,19 +16,16 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
 
     <!-- Theme CSS -->
-      
-    <link rel="stylesheet" href="./assets/css/theme.min.css" id="stylesheetLight">
-
-    <link rel="stylesheet" href="./assets/css/theme-dark.min.css" id="stylesheetDark">
-
     
+    <link rel="stylesheet" href="./assets/css/theme.min.css">
+      
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/simple-lightbox.min.css">
 
     <title>Yann Michalski - UX Designer</title>
   </head>
   <body>
-
-
 
     <!-- MAIN CONTENT
     ================================================== -->
@@ -37,8 +34,9 @@
       <div class="custom-burger-container d-md-none">
         <ul>
           <li><a href="index.html">Accueil</a></li>
-          <li><a href="index.html#projet">Projets</a></li>
-          <li><a href="index.html#about">À Propos</a></li>
+          <li><a href="index.html#projet">Projets UX</a></li>
+          <li><a href="ui.html">UI</a></li>
+          <li><a href="index.html#about">À propos</a></li>
         </ul>
       </div>
 
@@ -46,8 +44,9 @@
         <header>
           <nav class="d-none d-md-block">
             <ul>
-              <li><a class="js-scrollTo" href="#projet">Projets</a></li>
-              <li><a class="js-scrollTo" href="#about">à Propos</a></li>
+              <li><a class="js-scrollTo" href="#projet">Projets UX</a></li>
+              <li><a class="js-scrollTo" href="ui.html">UI</a></li>
+              <li><a class="js-scrollTo" href="#about">À propos</a></li>
             </ul>
           </nav>
 
@@ -59,116 +58,227 @@
 
         </header>
         <section class="section-1">
-              <h1>Yann<br />Michalski <em>UX designer</em></h1>
-              <p>Découvrir, explorer, comprendre et ...<br/>améliorer</p>
+              <h1>Yann Michalski <em>UX designer</em></h1>
+              <p>Découvrir, comprendre et concevoir <span>ensemble</span> des expériences qui font sens</p>
         </section>
         <div class='icon-scroll d-none d-md-block'></div>
       </div>
   
-      <div class="container pt-6 pb-6">
-        <h2 class="text-center m-6"  id="projet">Projets</h2>
-        <div class="row">
-          <div class="col-12 col-lg-5 offset-lg-1">
-            <div class="card">
-              <a href="cs_shiseido.html" class="card-banner-click"><img src="assets/img/projet/cover/shiseido-cover.jpg" alt="Projet Shiseido" class="card-img-top"></a>
-              <div class="card-body text-center">
-                <h3 class="card-title">
-                <a href="cs_shiseido.html">Shiseido</a>
-                </h3>
-                <p class="card-text text-muted"><small>App redesign</small></p>
-                <p class="card-text">
-                  <span class="badge badge-soft-secondary">
-                    E-commerce
-                  </span>
-                  <span class="badge badge-soft-secondary">
-                    Prototype
-                  </span>
-                  <span class="badge badge-soft-secondary">
-                    Figma
-                  </span>
-                </p>
-                <a href="cs_shiseido.html" class="btn-more" title="Voir le projet Shiseido">Voir le projet</a>
+      <div class="container">
+        <section class="section-2">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="projet">Projets</h2>
+              <ul class="custom-filter">
+                <li data-project-type="case">Case studies</li>
+                <li data-project-type="personnal">Projets personnels</li>
+                <li data-project-type="all" class="active">Tout voir</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-md-6 project-type" data-project-type="case all">
+              <div class="card new-card new-card-projet">
+                <a href="cs_auchan.html" class="card-banner-click"><img src="assets/img/home/card-cover/auchan-card-cover.jpg" alt="Projet Auchan drive" class="card-img-top">
+                <div class="card-body text-center">
+                  <div class="circle-logo"><img src="assets/img/home/card-circle/auchan-logo.jpg" alt="Logo Auchan"></div>
+                  <p class="card-title">Auchan drive</p>
+                  <p class="card-text text-muted">Faciliter un parcours aux aléas multiples et automatiser les achats récurrents.</p>
+                  <div class="card-badges">
+                    <span class="badge">
+                      E-commerce
+                    </span>
+                    <span class="badge">
+                      Mobile
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 project-type" data-project-type="case all">
+              <div class="card new-card new-card-projet">
+                <a href="cs_shiseido.html" class="card-banner-click"><img src="assets/img/home/card-cover/shiseido-card-cover.jpg" alt="Projet Shiseido" class="card-img-top">
+                <div class="card-body text-center">
+                  <div class="circle-logo"><img src="assets/img/home/card-circle/shiseido-logo.jpg" alt="Logo Shiseido"></div>
+                  <p class="card-title">Shiseido</p>
+                  <p class="card-text text-muted">Insuffler une identité et développer une gamme promotionnelle éphémère.</p>
+                  <div class="card-badges">
+                    <span class="badge">
+                      Identité
+                    </span>
+                    <span class="badge">
+                      Produit
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 project-type" data-project-type="case all">
+              <div class="card new-card new-card-projet">
+                <a href="cs_huby.html" class="card-banner-click"><img src="assets/img/home/card-cover/huby-card-cover.jpg" alt="Projet Huby" class="card-img-top">
+                <div class="card-body text-center">
+                  <div class="circle-logo"><img src="assets/img/home/card-circle/huby-logo.jpg" alt="Logo Huby"></div>
+                  <p class="card-title">Huby innovation</p>
+                  <p class="card-text text-muted">Proposer une expérience originale qui reflétent la gamme de produits Huby.</p>
+                  <div class="card-badges">
+                    <span class="badge">
+                      E-commerce
+                    </span>
+                    <span class="badge">
+                      Navigation
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 project-type" data-project-type="personnal all">
+              <div class="card new-card new-card-projet">
+                <a href="cs_equivalenza.html" class="card-banner-click"><img src="assets/img/home/card-cover/equivalenza-card-cover.jpg" alt="Projet Equivalenza" class="card-img-top">
+                <div class="card-body text-center">
+                  <div class="circle-logo"><img src="assets/img/home/card-circle/equivalenza-logo.jpg" alt="Logo Equivalenza"></div>
+                  <p class="card-title">Equivalenza</p>
+                  <p class="card-text text-muted">Uniformiser les contenus er créer une expérience client personnalisée.</p>
+                  <div class="card-badges">
+                    <span class="badge">
+                      Identité
+                    </span>
+                    <span class="badge">
+                      Redesign
+                    </span>
+                    <span class="badge">
+                      Interaction
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 project-type" data-project-type="personnal all">
+              <div class="card new-card new-card-projet">
+                <a href="cs_spotify.html" class="card-banner-click"><img src="assets/img/home/card-cover/spotify-card-cover.jpg" alt="Projet Spotify" class="card-img-top">
+                <div class="card-body text-center">
+                  <div class="circle-logo"><img src="assets/img/home/card-circle/spotify-logo.jpg" alt="Logo Spotify"></div>
+                  <p class="card-title">Spotify</p>
+                  <p class="card-text text-muted">Simplifier et uniformiser l’une des fonctionnalités les plus utilisées&nbsp;: la playlist.</p>
+                  <div class="card-badges">
+                    <span class="badge">
+                      Multi-plateforme
+                    </span>
+                    <span class="badge">
+                      Fonctionnalité
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 project-type" data-project-type="personnal all">
+              <div class="card new-card new-card-projet">
+                <a href="cs_pooltogether.html" class="card-banner-click"><img src="assets/img/home/card-cover/pooltogether-card-cover.jpg" alt="Projet Pooltogether" class="card-img-top">
+                <div class="card-body text-center">
+                  <div class="circle-logo"><img src="assets/img/home/card-circle/pooltogether-logo.jpg" alt="Logo Pooltogether"></div>
+                  <p class="card-title">Pooltogether</p>
+                  <p class="card-text text-muted">Amener un public néophyte à utiliser le web3 ? Un véritable challenge d’onboarding.</p>
+                  <div class="card-badges">
+                    <span class="badge">
+                      Web 3
+                    </span>
+                    <span class="badge">
+                      Onboarding
+                    </span>
+                  </div>
+                </div>
+                </a>
+              </div>
+            </div>
+          </div> <!-- / .row -->
+        </section>
+      </div><!-- / .container -->
+      <div class="container">
+        <section class="section-3">
+          <p>Autres projets</p>
+          <div class="row">
+            <div class="col">
+              <div class="liste-off">
+                <img src="assets/img/home/clients/cete-logo.jpg" alt="Logo compétence et emploi">
+                <img src="assets/img/home/clients/corsaires-logo.jpg" alt="Logo corsaires immo">
+                <img src="assets/img/home/clients/rungis-logo.jpg" alt="Logo rungis">
+                <img src="assets/img/home/clients/tacotroc-logo.jpg" alt="Logo tacotroc">
+                <img src="assets/img/home/clients/heartravel-logo.jpg" alt="Logo heartravel">
               </div>
             </div>
           </div>
-          <div class="col-12 col-lg-5">
-            <div class="card">
-              <a href="cs_auchan.html" class="card-banner-click"><img src="assets/img/projet/cover/auchan-cover.jpg" alt="Projet Auchan" class="card-img-top"></a>
-              <div class="card-body text-center">
-                <h3 class="card-title">
-                <a href="cs_auchan.html">Auchan drive</a>
-                </h3>
-                <p class="card-text text-muted"><small>App redesign</small></p>
-                <p class="card-text">
-                  <span class="badge badge-soft-secondary">
-                    E-commerce
-                  </span>
-                  <span class="badge badge-soft-secondary">
-                    Interview
-                  </span>
-                  <span class="badge badge-soft-secondary">
-                    Prototype
-                  </span>
-                  <span class="badge badge-soft-secondary">
-                    Figma
-                  </span>
-                </p>
-                 <a href="cs_auchan.html" class="btn-more" title="Voir le projet Auchan">Voir le projet</a>
-              </div>
-            </div>  
-          </div>
-        </div> <!-- / .row -->
-      </div><!-- / .container -->
-      <div class="container container--about pb-6">
-        <h2 class="m-6 text-center" id="about">À propos</h2>
-        <div class="row justify-content-center">
-          <div class="col-10 col-sm-12 col-lg-10">
-            <div class="about-content">
-              <p><strong>UX Designer junior</strong>, je vous accompagne dans la création d'expériences qui font sens pour le visiteur.</p>
-              <p>Ma méthode se base sur le <strong>design thinking</strong> et l'utilisation de cycles courts (sprint) permettant d'obtenir rapidement des résultats concrets.</p>
-              <div class="about-service">
-                <div class="service-content">
-                  <div class="service-content-title">Recherches</div>
-                  <ul>
-                    <li>Test empathie</li>
-                    <li>Analytics</li>
-                    <li>Benchmark</li>
-                    <li>Analyse ergonomique</li>
-                    <li>Veille</li>
-                  </ul>
-                </div>
-                <div class="service-content">
-                  <div class="service-content-title">Idéation & Création</div>
+        </section>
+      </div>   
+
+<div class="container-fluid section-4-holder">
+      <div class="container">
+        <section class="section-4">
+          <div class="row">
+            <div class="col-12">
+              <h2 id="about">À propos</h2>
+              <div class="about-content">
+                <p><strong>UX Designer</strong>, je vous accompagne dans la création d'expériences qui font sens pour l’utilisateur. Avec l’intelligence collective pour moteur et en alliant <strong>design thinking et lean UX</strong>, co-construisons votre projet.</p>
+                <div class="about-service">
+                  <div class="card-info">
+                    <h3>Recherches</h3>
+                    <img src="assets/img/home/picto-recherche.svg" alt="Picto recherche">
                     <ul>
-                      <li>Définition des besoins</li>
-                      <li>Atelier de co-création</li>
-                      <li>Sketch</li>
-                      <li>Prototypage rapide</li>
+                      <li>Test empathie</li>
+                      <li>Interviews & observations</li>
+                      <li>Analytics</li>
+                      <li>Benchmark & veille</li>
                     </ul>
-                </div>
-                <div class="service-content">
-                  <div class="service-content-title">Utilisateurs</div>
+                  </div>
+                  <div class="card-info">
+                    <h3>Idéation</h3>
+                    <img src="assets/img/home/picto-ideation.svg" alt="Picto idéation">
                     <ul>
-                      <li>Personas</li>
-                      <li>Customer Journey Map</li>
+                      <li>Atelier de co-création</li>
+                      <li>Intelligence collective</li>
+                      <li>Facilitation</li>
+                      <li>Sketching</li>
+                    </ul>
+                  </div>
+                  <div class="card-info">
+                    <h3>Conception</h3>
+                    <img src="assets/img/home/picto-conception.svg" alt="Picto conception">
+                    <ul>
+                      <li>Wireframe</li>
+                      <li>Prototypage</li>
+                      <li>Interaction</li>
+                      <li>Design system</li>
+                    </ul>
+                  </div>
+                  <div class="card-info">
+                    <h3>Test & recette</h3>
+                    <img src="assets/img/home/picto-recette.svg" alt="Picto test">
+                    <ul>
                       <li>Recrutement utilisateur</li>
                       <li>Test utilisateur</li>
+                      <li>Suivi de développement</li>
                     </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </div>
+
+    </div>
   
       <div class="container-fluid">
         <footer class="text-center m-4"><a class="linkedin" href="https://www.linkedin.com/in/yann-michalski-uxdesign" target="_blank" title="Voir mon profil sur Linkedin"><img src="assets/img/home/linkedin.svg" alt="Logo linkedin"></a></footer>
       </div>
     </div> <!-- / .main-content -->
 
-
     <!-- JAVASCRIPT
     ================================================== -->
+
     <!-- Libs JS -->
     <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
     <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -194,13 +304,14 @@
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
         <script>
           $(document).ready(function() {
             AOS.init();
             $('.js-scrollTo').on('click', function() { // Au clic sur un élément
               var page = $(this).attr('href'); // Page cible
               var speed = 750; // Durée de l'animation (en ms)
-              var minusoffset = ($(page).offset().top)-50;
+              var minusoffset = ($(page).offset().top)-100;
               $('html, body').animate( { scrollTop: minusoffset }, speed ); // Go
               return false;
             });
@@ -232,6 +343,8 @@
               $('html, body').animate({scrollTop:0}, '300');
             });
 
+
+
             $(".custom-filter li").on('click', function() {
               $(".custom-filter li").removeClass("active");
               $(this).addClass("active");
@@ -241,9 +354,26 @@
   
             });
 
+            new SimpleLightbox({elements: '.lightbox-picture a'});
+            new SimpleLightbox({elements: '.lightbox-link'});
+    /////////////////
+    var macy = Macy({
+        container: '#macy-container',
+        trueOrder: true,
+        margin: 10,
+        columns: 4,
+        breakAt: {
+            767: 2,
+            400: 1
+        }
+    });
+
+    ///////////////
 
           });
         </script>
 
+
   </body>
+
 </html>

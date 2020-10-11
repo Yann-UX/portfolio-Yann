@@ -8,10 +8,27 @@
 // $body-bg: #12263F;
 
 
-$custom--black: #141414;
-$custom--black__opa: rgba(20, 20, 20, 0.7);
+// ---- BASE COLORS ----
+
+$custom--dark__blue:  #0B2056;
+$custom--deep__blue:  #102F7C;
+$custom--blue:  #1643B3;
+$custom--light__blue:  #D2DDF9;
+$custom--ultralight__blue:  #EDF1FD;
+
+$custom--yellow:  #FAEFD1;
+$custom--orange:  #E76222;
+
+$custom--dark__black: #2c2c2c;
+$custom--dark__grey:#5e5e5e;
+$custom--grey:#919191;
+$custom--light__grey:#C4C4C4;
+$custom--ultralight__grey:#f0f0f0;
+
 $custom--white: #fafafa;
 
+
+// ---- POJET COLORS ----
 $shiseido-red:#D32B2A;
 $shiseido-pink:rgba(225, 29, 29, .75);
 
@@ -22,19 +39,43 @@ $equivalenza-brown:rgba(176, 168, 148, 1);
 
 $spotify-green:#1DB954;
 
+$huby-blue:#1AADA3;
+
+
+
+// ---- FONTS ----
 $font-family-sans-serif: 'Montserrat', sans-serif !default;
 $font-size-base: 1rem !default;
 
-$h1-font-size: 3.052rem !default;
-$h2-font-size: 1.953rem !default;
-$h3-font-size: 1.0625rem !default;
-$h4-font-size: 0.9375rem !default;
+
+// ---- GENERAL ----
+$h4-font-size: 1em !default;
 $h5-font-size: 0.8125rem !default;
 $h6-font-size: 0.625rem !default;
 
+// ---- HOME ----
+$h1-home-font-size: 3.998em !default;
+$h2-home-font-size: 1.999em !default;
+
+// ---- PROJET ----
+$h1-font-size: 2.827em !default;
+$h2-font-size: 3.625em !default;
+$h3-font-size: 1.414em !default;
+
+
+// ---- BORDER RADIUS ----
 $border-radius: 0.2rem !default;
 $border-radius-lg: 0.2rem !default;
 $border-radius-sm: 0.2rem !default;
 
-$card-box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.03);
-$custom-box-shadow: 0px 5px 11px 3px rgba(0, 0, 0, 0.03);
+// ---- BOX SHADOW ----
+$card-box-shadow: 0px 2px 10px 0px rgba(92, 117, 154, 0.1);
+$custom-box-shadow: 0px 2px 10px 0px rgba(19, 56, 149, 0.1);
+$custom-box-shadow-hover: 0px 7px 17px 0px rgba(19, 56, 149, 0.2);
+
+// ---- MARGIN ----
+
+// 1199
+// 991
+// 767
+// 575

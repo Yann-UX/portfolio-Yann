@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+	@@include("partials/head.html", {
+	"title": "Projet personnel Spotify"
+})
+
+
+</head>
+<body>
+
+<!-- MAIN CONTENT
+	================================================== -->
+	<div class="main-content content-case-study content-case-study--spotify">
+
+		@@include("partials/navigation.html")
+
+
+		<div class="container d-none d-md-block">
+
+
+		</div>
+
+
+	<!-- CONTENT -->
+	<div class="container-fluid">
+
+		<section id="contexte">
+
+			
+
+
+
+
+
+			<div class="row mab-50">
+				<div class="col-sm-10 offset-sm-1">    
+					<h1>Spotify</h1>
+				</div>
+			</div>
+			<div class="row mab-50">
+				<div class="col-sm-10 offset-sm-1">  
+					<p class="projet-typo mab-50">Redesign de fonctionnalité <span>Projet personnel</span></p>
+					<p>Avec plus de 200 millions d'utilisateurs actifs mensuel, le géant du streaming musical lancé en 2008 est devenue LA référence pour les mélomanes du monde entier. Décliné en différentes versions, la plateforme est accessible via une multitude de supports : Web player, application version smartphone ou ordinateur.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="objectif" class="pad-150">
+			<div class="row">
+				<div class="col-lg-3 col-sm-10 offset-sm-1">
+					<h2>Objectifs<span></span></h2>
+				</div>
+				<div class="col-lg-7 col-sm-10 offset-sm-1 offset-lg-0">
+					<p>Uniformiser l'expérience multi-device, prévenir les erreurs et apporter plus de visibilité sur les titres sauvegardés</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="recherches" class="bg-colored bg-blue">
+			<h2 class="d-none d-lg-block fixed-for-scroll">Recherches<span></span></h2>
+			<div class="row">
+				<div class="col-lg-3 col-sm-10 offset-sm-1">
+					<h2 class="d-lg-none">Recherches<span></span></h2>
+				</div>
+				<div class="col-lg-7 col-sm-10 offset-sm-1 offset-lg-0 scroll-compens">
+					<p>Pierre angulaire du modèle Spotify, la découverte de <strong>playlist génère à elle seule 2/3 de l'activité</strong> des utilisateurs.</p>
+              		<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture pad-50">
+              			<a href="assets/img/projet/spotify/charts-spotify.jpg" title="Spotify et les playlists"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/charts-spotify.jpg" alt="Activité liée aux playlist sur Spotify"></a>
+              			<figcaption class="text-muted">Spotify et les playlist</figcaption>
+              		</figure>
+              		<p>Dans ce contexte, je me suis penché sur cette fonctionnalité qui, bien que simple, peut se révéler déroutante pour l'utilisateur notamment avec la création d'une <strong>multitude de doublons</strong>.</p>
+              		<p class=" mab-50">Les exemples suivants sont extrait des version web player, application mobile et application bureau&nbsp;:</p>
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-30">
+                	<a href="assets/img/projet/spotify/web-app.jpg" title="Version web app de Spotify"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/web-app.jpg" alt="Version web app de Spotify"></a>
+                		<figcaption class="text-muted">Version web app de Spotify</figcaption>
+              		</figure>
+              		<p class="mab-75">Mauvais élève du trio, le lecteur web, malgré sa grande capacité d'affichage, <strong>ne permet pas de vérifier si un titre est présent</strong> dans une playlist avant de l'ajouter à celle-ci. Ni indication visuelle, ni message d'information à l'ajout, <strong>les doublons se créent</strong> sans que l'utilisateur n'en soit informé.</p>
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-30">
+					  <a href="assets/img/projet/spotify/desk-app.jpg" title="Version desk app Spotify"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/desk-app.jpg" alt="Version desk app Spotify"></a>
+					 <figcaption class="text-muted">Version desktop de Spotify</figcaption>
+					</figure>
+					<p class="mab-75">Là encore, <strong>aucune indication visuelle</strong> ne permet de savoir si un titre est déjà présent dans sa playlist.
+					Cette fois, un message attire l'attention de l'utilisateur mais son manque de clarté prête à <strong>confusion quant à l'action à effectuer</strong>.
+					Au choix, l'utilisateur pourra « Ajouter quand même » ou « Ignorer le doublon » : Un wording efficace pour certains, perturbant pour d'autres.</p>
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-30">
+					  <a href="assets/img/projet/spotify/smart-app.jpg" title="Version smartphone de Spotify"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/smart-app.jpg" alt="Version smartphone de Spotify"></a>
+					  <figcaption class="text-muted">Version smartphone de Spotify</figcaption>
+					</figure>
+					<p class="">La version smartphone s'en tire mieux à cet exercice. Si toujours <strong>aucune indication visuelle</strong> n'est présente, la fenêtre d'information prévenant de la création d'un doublon est cette fois lisible avec une <strong>hiérarchisation cohérente et un choix de termes pertinent</strong>.</p>
+				</div>
+			</div>
+		</section>
+
+		<section id="approche" class="pad-150">
+			<h2 class="d-none d-lg-block fixed-for-scroll">Approche<span></span></h2>
+			<div class="row">
+				<div class="col-lg-3 col-sm-10 offset-sm-1">
+					<h2 class="d-lg-none">Approche<span></span></h2>
+				</div>
+				<div class="col-lg-7 col-sm-10 offset-sm-1 offset-lg-0">
+
+
+					<p class="mab-50 scroll-compens">Le problème majeur de cette fonctionnalité est lié à la <strong>lisibilité d'information</strong>, tant en terme visuel que de wording. Un travail me semble donc nécessaire pour offrir à l'utilisateur une <strong>plus grande maîtrise de ses titres et playlists</strong> avec un aperçu direct du <strong>statut du titre</strong> (liké, dans une playlist, dans plusieurs playlists).</p>
+					<h3>Proposition Une : Icône et sous-menu</h3>
+					<p class="mab-30">Directement intégrée dans la carte du titre, la fonction playlist est accessible via une <strong>icône dédiée</strong>.
+					Celle-ci bénéficie d'un <strong>état de surbrillance</strong> si le titre est déjà dans une playlist (ou plusieurs). Un sous menu permet de modifier la présence d'un titre dans une playlist.</p>
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-30">
+						<a href="assets/img/projet/spotify/prop-01.jpg" title="Piste avec icône"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/prop-01.jpg" alt="Icône de playlist"></a>
+						<figcaption class="text-muted">Une icône playlist est ajoutée</figcaption>
+					</figure>
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-50">
+						<a href="assets/img/projet/spotify/prop-02.jpg" title="Piste avec icône"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/prop-02.jpg" alt="Icône en surbrillance"></a>
+						<figcaption class="text-muted">L'icône en surbrillance indique la présence du titre en playlist</figcaption>
+					</figure>
+					<h3>Proposition Deux : Sous-menu et chips</h3>
+					<p>Le principe du sous-menu est conservé mais le nom des playlist dans lesquelles le titre se trouve est <strong>ajouté dans la carte du titre</strong>.</p>
+					<p class="mab-30">Cette option, très visuelle, reste cependant <strong>problématique dans un usage mobile</strong>.</p>
+
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-50">
+						<a href="assets/img/projet/spotify/prop-03.jpg" title="Piste avec marqueur"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/prop-03.jpg" alt="Marqueur sur la carte du titre"></a>
+						<figcaption class="text-muted">Un marqueur est ajouté sur la carte du titre</figcaption>
+					</figure>
+					<h3>Proposition Trois: Sous-menu uniquement</h3>
+					<p class="mab-30">La fonctionnement actuel est conservé mais <strong>un effet est appliqué aux playlist où le titre est déjà présent</strong> (opacité et surbrillance du pictogramme). Un texte est également ajouté pour <strong>signifier explicitement</strong> la présence du titre.</p>
+
+					<figure data-aos="fade-up" data-aos-duration="450" data-aos-offset="100" class="lightbox-picture mab-50">
+						<a href="assets/img/projet/spotify/prop-04.jpg" title="Indication sur la playlist"><img class="fw spotify-spec-1" src="assets/img/projet/spotify/prop-04.jpg" alt="La playlist contenant déjà le titre"></a>
+						<figcaption class="text-muted">La playlist contenant déjà le titre est indisponible</figcaption>
+					</figure>
+					<p class="mt-6">A noter dans ces trois propositions de l'<strong>impossibilité d'ajouter un titre déjà présent dans une playlist</strong>.
+					Les fenêtres d'information sont, en conséquence,  retirées du processus.</p>
+					<p>La suppression d'un titre dans une playlist reste quant à elle inchangée.</p>
+					<p><i>NB : Courant 2020, la plateforme modifiait sa fonctionnalité "titre liké" en intégrant un système plus visuel d'icône pour résoudre l'autre probléme de visibilité lié à la conservation des titres.</i></p>
+				</div>
+	
+			</div>
+		</section>
+
+
+
+
+
+
+
+
+
+		<a href="index.html#projet" class="back-to-projet" title="Tous les projets">Retourner aux projets</a>
+</div>
+</div> <!-- / .main-content -->
+
+
+
+<!-- JAVASCRIPT
+	================================================== -->
+	@@include("partials/scripts.html")
+
+</body>
+
+</html> 
